@@ -63,6 +63,7 @@ Each adaptation has its own version (`Version` in its `profile.json`); releases 
 
 #### Bug fixes
 
+- Textured robot parts retain their colours in Foxglove's 3D panel and stereo view when a recording opens paused (0.2.2).
 - The 3D panel looks as smooth as in the browser: grid lines and box edges are antialiased instead of dotted and jagged, and a distant grid no longer shows moire rings. It renders at full resolution with 4x multisampling (`RenderScale` 1, `Antialias` 4); QAROS without `Antialias` support renders it single-sampled (0.2.1).
 - Thin lines and edges keep their depth in the glasses: they no longer show dashed or broken, and keep their full brightness (0.1.1).
 

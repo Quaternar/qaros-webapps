@@ -40,10 +40,15 @@
       "JavaScript": "",
       "Name": "foxglove-scene",
       "Stage": "afterLoad"
+    },
+    {
+      "File": "scripts/foxglove-textures.js",
+      "Name": "foxglove-textures",
+      "Stage": "afterLoad"
     }
   ],
   "ShareBrowserProfile": true,
   "StartAddress": "https://app.foxglove.dev/",
-  "Version": "0.2.1",
+  "Version": "0.2.2",
   "_sv": 3
 }

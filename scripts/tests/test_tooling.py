@@ -163,7 +163,7 @@ class CheckVersionsTests(Scratch):
         self.assertEqual((errors, changed), ([], False))
 
         test = self.dir / "adaptations/foxglove/test/scene.test.mjs"
-        test.parent.mkdir()
+        test.parent.mkdir(exist_ok=True)
         test.write_text("// a test, never packaged\n", encoding="utf-8")
         errors, _, changed = check_versions.check(self.dir, "2026.11.14.1")
         self.assertEqual((errors, changed), ([], False))
