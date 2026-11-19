@@ -1,0 +1,41 @@
+{
+  "Name": "molstar-rcsb",
+  "AddressPattern": "https://www.rcsb.org/3d-view/*",
+  "Engine": "webgl",
+  "PageRegion": {
+    "Width": 1024,
+    "Height": 1024
+  },
+  "ShareBrowserProfile": true,
+  "AppScale": 0.01,
+  "RenderScale": 0.5,
+  "ContinuousRendering": false,
+  "TransportAlpha": true,
+  "Scripts": [
+    {
+      "Name": "molstar-dpr",
+      "Stage": "preDocument",
+      "File": "scripts/molstar-dpr.js"
+    },
+    {
+      "Name": "molstar-site-bootstrap",
+      "Stage": "preDocument",
+      "File": "scripts/molstar-site-bootstrap.js"
+    },
+    {
+      "Name": "render-frame-core",
+      "Stage": "afterLoad",
+      "Library": "render-frame-core@1"
+    },
+    {
+      "Name": "molstar-site-adapter",
+      "Stage": "afterLoad",
+      "File": "scripts/molstar-site-adapter.js"
+    }
+  ],
+  "_sv": 3,
+  "Id": "com.quaternar.molstar-rcsb",
+  "DisplayName": "RCSB PDB 3D",
+  "Version": "0.1.0",
+  "StartAddress": "https://www.rcsb.org/3d-view/1CBS"
+}

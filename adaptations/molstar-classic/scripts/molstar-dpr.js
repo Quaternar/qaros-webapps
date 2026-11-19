@@ -1,0 +1,1 @@
+Object.defineProperty(window,'devicePixelRatio',{get:()=>1,configurable:true});

@@ -8,6 +8,48 @@ Each adaptation has its own version (`Version` in its `profile.json`); releases 
 
 ## [Unreleased]
 
+### com.quaternar.molstar-alphafold
+
+#### Features
+
+- Explore the AlphaFold DB structure viewer in stereo with depth, starting with P69905 (0.1.0).
+
+### com.quaternar.molstar-classic
+
+#### Features
+
+- Open Mol* Classic in stereo with depth, starting with the PDB structure 1CBS (0.1.0).
+
+### com.quaternar.molstar-pdbe
+
+#### Features
+
+- Open the PDBe entry viewer in stereo with depth, starting with 1CBS (0.1.0).
+
+### com.quaternar.molstar-prism
+
+#### Features
+
+- Open Mol* Prism in stereo with depth and inspect residues using its interactive QAROS sequence panel (0.1.0).
+
+### com.quaternar.molstar-rcsb
+
+#### Features
+
+- Open the RCSB PDB structure viewer in stereo with depth, starting with 1CBS (0.1.0).
+
+### com.quaternar.molview-editor
+
+#### Features
+
+- Preview the structure from the MolView Stories Editor in stereo with depth (0.1.0).
+
+### com.quaternar.molview-stories
+
+#### Features
+
+- View MolView Stories in stereo with depth, starting with the Exosome example (0.1.0).
+
 ### com.quaternar.foxglove
 
 #### Breaking

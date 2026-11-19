@@ -1,0 +1,52 @@
+{
+  "Name": "molstar-prism",
+  "AddressPattern": "https://molstar.org/prism-preview/*",
+  "Engine": "webgl",
+  "PageRegion": {
+    "Width": 1024,
+    "Height": 1024
+  },
+  "ShareBrowserProfile": true,
+  "AppScale": 0.01,
+  "RenderScale": 0.5,
+  "ContinuousRendering": false,
+  "TransportAlpha": true,
+  "Scripts": [
+    {
+      "Name": "molstar-dpr",
+      "Stage": "preDocument",
+      "File": "scripts/molstar-dpr.js"
+    },
+    {
+      "Name": "render-frame-core",
+      "Stage": "afterLoad",
+      "Library": "render-frame-core@1"
+    },
+    {
+      "Name": "prism-adapter",
+      "Stage": "afterLoad",
+      "File": "scripts/prism-adapter.js"
+    },
+    {
+      "Name": "prism-structure-bridge",
+      "Stage": "afterLoad",
+      "File": "scripts/prism-structure-bridge.js"
+    },
+    {
+      "Name": "prism-sequence-bridge",
+      "Stage": "afterLoad",
+      "File": "scripts/prism-sequence-bridge.js"
+    },
+    {
+      "Name": "prism-served-panel",
+      "Stage": "afterLoad",
+      "File": "scripts/prism-served-panel.js"
+    }
+  ],
+  "_sv": 3,
+  "Id": "com.quaternar.molstar-prism",
+  "DisplayName": "Mol* Prism",
+  "Version": "0.1.0",
+  "StartAddress": "https://molstar.org/prism-preview/?graphics-backend=webgl2",
+  "Panels": "panels"
+}

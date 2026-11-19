@@ -1,0 +1,36 @@
+{
+  "Name": "molview-stories",
+  "AddressPattern": "https://molstar.org/stories-viewer/v1/*",
+  "Engine": "webgl",
+  "PageRegion": {
+    "Width": 1024,
+    "Height": 1024
+  },
+  "ShareBrowserProfile": true,
+  "AppScale": 0.01,
+  "RenderScale": 0.35,
+  "ContinuousRendering": false,
+  "TransportAlpha": true,
+  "Scripts": [
+    {
+      "Name": "molstar-dpr",
+      "Stage": "preDocument",
+      "File": "scripts/molstar-dpr.js"
+    },
+    {
+      "Name": "render-frame-core",
+      "Stage": "afterLoad",
+      "Library": "render-frame-core@1"
+    },
+    {
+      "Name": "molstar-adapter",
+      "Stage": "afterLoad",
+      "File": "scripts/molstar-adapter.js"
+    }
+  ],
+  "_sv": 3,
+  "Id": "com.quaternar.molview-stories",
+  "DisplayName": "MolView Stories",
+  "Version": "0.1.0",
+  "StartAddress": "https://molstar.org/stories-viewer/v1/?story-url=https%3A%2F%2Fraw.githubusercontent.com%2Fmolstar%2Fmol-view-stories%2Frefs%2Fheads%2Fmain%2F%2540mol-view-stories%2Fwebapp%2Fpublic%2Fexamples%2Fexosome%2Fstory.mvsx&data-format=mvsx&story-session-url=https%3A%2F%2Fraw.githubusercontent.com%2Fmolstar%2Fmol-view-stories%2Frefs%2Fheads%2Fmain%2F%2540mol-view-stories%2Fwebapp%2Fpublic%2Fexamples%2Fexosome%2Fstory.mvstory"
+}

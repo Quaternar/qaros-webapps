@@ -1,0 +1,36 @@
+{
+  "Name": "molview-editor",
+  "AddressPattern": "https://molstar.org/mol-view-stories/*",
+  "Engine": "webgl",
+  "PageRegion": {
+    "Width": 1024,
+    "Height": 1024
+  },
+  "ShareBrowserProfile": true,
+  "AppScale": 0.01,
+  "RenderScale": 0.35,
+  "ContinuousRendering": false,
+  "TransportAlpha": true,
+  "Scripts": [
+    {
+      "Name": "molstar-dpr",
+      "Stage": "preDocument",
+      "File": "scripts/molstar-dpr.js"
+    },
+    {
+      "Name": "render-frame-core",
+      "Stage": "afterLoad",
+      "Library": "render-frame-core@1"
+    },
+    {
+      "Name": "molstar-adapter",
+      "Stage": "afterLoad",
+      "File": "scripts/molstar-adapter.js"
+    }
+  ],
+  "_sv": 3,
+  "Id": "com.quaternar.molview-editor",
+  "DisplayName": "MolView Stories Editor",
+  "Version": "0.1.0",
+  "StartAddress": "https://molstar.org/mol-view-stories/builder/?template=simple&preview=1"
+}

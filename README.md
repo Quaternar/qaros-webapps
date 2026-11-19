@@ -58,6 +58,13 @@ page loads:
 | Folder | Id | Opens | Version |
 |---|---|---|---|
 | `foxglove` | `com.quaternar.foxglove` | https://app.foxglove.dev/ | 0.2.0 |
+| `molstar-alphafold` | `com.quaternar.molstar-alphafold` | AlphaFold DB entry P69905 | 0.1.0 |
+| `molstar-classic` | `com.quaternar.molstar-classic` | Mol* Viewer with PDB entry 1CBS | 0.1.0 |
+| `molstar-pdbe` | `com.quaternar.molstar-pdbe` | PDBe entry 1CBS | 0.1.0 |
+| `molstar-prism` | `com.quaternar.molstar-prism` | Mol* Prism with a served sequence panel | 0.1.0 |
+| `molstar-rcsb` | `com.quaternar.molstar-rcsb` | RCSB PDB entry 1CBS | 0.1.0 |
+| `molview-editor` | `com.quaternar.molview-editor` | MolView Stories Editor with a simple template | 0.1.0 |
+| `molview-stories` | `com.quaternar.molview-stories` | MolView Stories Exosome example | 0.1.0 |
 | `threejs-examples` | `com.quaternar.threejs-examples` | https://threejs.org/examples/ | 0.2.0 |
 | `threejs-shinjuku` | `com.quaternar.threejs-shinjuku` | Shinjuku Station indoor map demo | 0.2.0 |
 

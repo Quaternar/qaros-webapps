@@ -1,0 +1,36 @@
+{
+  "Name": "molstar-classic",
+  "AddressPattern": "https://molstar.org/viewer/*",
+  "Engine": "webgl",
+  "PageRegion": {
+    "Width": 1024,
+    "Height": 1024
+  },
+  "ShareBrowserProfile": true,
+  "AppScale": 0.01,
+  "RenderScale": 0.35,
+  "ContinuousRendering": false,
+  "TransportAlpha": true,
+  "Scripts": [
+    {
+      "Name": "molstar-dpr",
+      "Stage": "preDocument",
+      "File": "scripts/molstar-dpr.js"
+    },
+    {
+      "Name": "render-frame-core",
+      "Stage": "afterLoad",
+      "Library": "render-frame-core@1"
+    },
+    {
+      "Name": "molstar-adapter",
+      "Stage": "afterLoad",
+      "File": "scripts/molstar-adapter.js"
+    }
+  ],
+  "_sv": 3,
+  "Id": "com.quaternar.molstar-classic",
+  "DisplayName": "Mol* Classic",
+  "Version": "0.1.0",
+  "StartAddress": "https://molstar.org/viewer/?pdb=1cbs"
+}

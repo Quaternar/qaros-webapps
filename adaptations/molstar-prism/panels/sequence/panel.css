@@ -1,0 +1,10 @@
+/* The AR window contains only the original strip. QAROS owns its window controls. */
+:root{color-scheme:light;background:transparent;color:#293036;font:14px system-ui,sans-serif}
+*{box-sizing:border-box}html,body,#sequence-surface{margin:0;padding:0;width:100vw;height:100vh;overflow:hidden}
+html,body,#sequence-surface,#sequence-surface *{user-select:none;-webkit-user-select:none;-webkit-user-drag:none;-webkit-touch-callout:none}
+::selection{background:transparent;color:inherit}
+#sequence-surface{position:relative;display:flex;align-items:center;justify-content:center;background:transparent}
+#sequence-image{display:block;width:100%;height:auto;max-height:100%;object-fit:contain;background:#faf9f6;cursor:crosshair;touch-action:none;user-select:none;-webkit-user-drag:none}
+#sequence-wait{font-size:clamp(10px,2vw,16px)}[hidden]{display:none!important}
+#sequence-cursor{position:absolute;width:3px;background:#00cfff;box-shadow:0 0 0 1px #112632;pointer-events:none;z-index:2;transform:translateX(-50%)}
+#sequence-cursor:after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border:2px solid #00cfff;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #112632;transform:translate(-50%,-50%)}
